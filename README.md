@@ -5,3 +5,12 @@ Transform my Twitter, Facebook and Instagram contend in LLM
 I transform each important content file (messages,comment,posts, ...) in a extractable information . I crate a environment variable (FACE_DATA) to be simple to share in the GITHUB. 
 
 How I had to get text from Portuguese, i need install ftfy to fix the cp1252 to utf-8
+
+
+:::mermaid
+sequenceDiagram
+    participant d as Social Media
+    participant e as Content
+    d->>e:Extract
+
+:::
