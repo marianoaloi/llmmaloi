@@ -7,10 +7,10 @@ I transform each important content file (messages,comment,posts, ...) in a extra
 How I had to get text from Portuguese, i need install ftfy to fix the cp1252 to utf-8
 
 
-``:::``mermaid
+```mermaid
 sequenceDiagram
     participant d as Social Media
     participant e as Content
     d->>e:Extract
 
-``:::``
+```
