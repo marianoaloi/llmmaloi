@@ -1,3 +1,7 @@
 ftfy
 
 pymongo
+
+bs4
+
+html5lib

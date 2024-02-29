@@ -16,4 +16,6 @@ def populate(obj:dict,result:dict):
     return result
             
 def cleanText(fieldText:str)->str:
+    if(not fieldText):
+        return ""
     return ftfy.fix_text(fieldText.replace("\n"," "))            
