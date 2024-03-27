@@ -6,5 +6,7 @@ bs4
 
 html5lib
 
-
+pandas
 tqdm
+
+keras_nlp
