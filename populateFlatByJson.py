@@ -20,6 +20,5 @@ def cleanText(fieldText:str)->str:
     if(not fieldText):
         return ""
     
-    fieldText=re.sub("=(.{2})","%\g<1>",fieldText)
     fieldText=fieldText.replace("\n"," ")
     return ftfy.fix_text(fieldText)            
