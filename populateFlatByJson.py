@@ -1,3 +1,4 @@
+import re
 import ftfy
 
 
@@ -18,4 +19,7 @@ def populate(obj:dict,result:dict):
 def cleanText(fieldText:str)->str:
     if(not fieldText):
         return ""
-    return ftfy.fix_text(fieldText.replace("\n"," "))            
+    
+    fieldText=re.sub("=(.{2})","%\g<1>",fieldText)
+    fieldText=fieldText.replace("\n"," ")
+    return ftfy.fix_text(fieldText)            
